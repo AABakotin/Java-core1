@@ -8,14 +8,14 @@ import static java.lang.System.*;
 
 public class Sotrudnik {
 
-    String name;
-    String familiya;
-    String otchestvo;
-    String eMail;
-    String emploess;
-    int birthday;
-    long teleFone;
-    int pay;
+    private String name;
+    private String familiya;
+    private String otchestvo;
+    private String eMail;
+    private String emploess;
+    private int birthday;
+    private long teleFone;
+    private int pay;
 
     public Sotrudnik(String name,String familiya,String otchestvo,String eMail,String emploess,int birthday, long teleFone, int pay){
         this.name = name;
