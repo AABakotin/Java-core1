@@ -6,14 +6,13 @@ public class Zoo {
 
 
         Animal[] animal = {
-                new Cat("Kesha","black"),
+                new Cat("Kesha", "black"),
                 new Cat("Kitty", "white"),
                 new Dog("Tuzik", "gray")
         };
         for (Animal value : animal) {
-            value.animalRun(200, 50);
+            value.animalRun(20, 50);
         }
-
 
 
     }

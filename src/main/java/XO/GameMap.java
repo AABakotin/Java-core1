@@ -126,7 +126,7 @@ public class GameMap extends JPanel {
         }
     }
 
-    private  boolean gameCheck(int dot, int stateGameOver) {
+    private boolean gameCheck(int dot, int stateGameOver) {
         if (checkWin(dot, winLength)) {
             this.stateGameOver = stateGameOver;
             isGameOver = true;

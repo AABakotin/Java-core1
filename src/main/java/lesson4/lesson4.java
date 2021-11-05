@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class lesson4 {
 
-    private static char[][] field;                                 // создаем поле (двумерный массив)
-    private static int sizeField = 5;                                   // Размер поля
+    private static char[][] field;                                  // создаем поле (двумерный массив)
+    private static final int sizeField = 5;                         // Размер поля
     private static final Scanner SCANNER = new Scanner(System.in);  // Сканер для ввода занчения в консоль
     private static final Random RANDOM = new Random();              // Создаем мозг АИ
     private static final char player = 'o';                         // Значок Игрока char - знак
@@ -20,13 +20,11 @@ public class lesson4 {
     public static void main(String[] args) {
 
 
-        while (true) {
+        do {
             playGame();
             System.out.printf("Счет --  Игрока  Железа \n           %d        %d\n", scorePlayer, scoreAI);
             System.out.println("Играем дальше? Y или N");
-            if (!SCANNER.next().equalsIgnoreCase("y"))
-                break;
-        }
+        } while (SCANNER.next().equalsIgnoreCase("y"));
     }
 
     private static void playGame() {

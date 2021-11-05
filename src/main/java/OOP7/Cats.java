@@ -11,20 +11,20 @@ public class Cats extends Animal {
         Bowl bowl = new Bowl();
         bowl.applyFood(100);
 
-        Cats [] cat = {
-                new Cats ("Barsik", 12,false ),
-                new Cats ("Murzik", 18,false ),
-                new Cats ("Kesha", 15,false ),
-                new Cats ("Gray", 12,false ),
-                new Cats ("Jerry", 20,false ),
-                new Cats ("Black", 14,false ),
-                new Cats ("Ruby", 8,false ),
-                new Cats ("Tomm", 16,false ),
+        Cats[] cat = {
+                new Cats("Barsik", 12, false),
+                new Cats("Murzik", 18, false),
+                new Cats("Kesha", 15, false),
+                new Cats("Gray", 12, false),
+                new Cats("Jerry", 20, false),
+                new Cats("Black", 14, false),
+                new Cats("Ruby", 8, false),
+                new Cats("Tomm", 16, false),
         };
 
         for (int i = 0; i < cat.length; i++) {
-           cat[i].eat(bowl);
-           System.out.printf("В миске осталось %d еды\n", bowl.getFullness());
+            cat[i].eat(bowl);
+            System.out.printf("В миске осталось %d еды\n", bowl.getFullness());
 
         }
 
